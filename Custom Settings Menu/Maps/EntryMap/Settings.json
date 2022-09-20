@@ -1,0 +1,8 @@
+{
+    "settings": {
+        "type": 0,
+        "dependencies": [
+            "Main"
+        ]
+    }
+}

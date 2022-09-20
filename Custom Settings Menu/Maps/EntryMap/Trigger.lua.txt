@@ -1,0 +1,13 @@
+
+-- LIBRARIES
+local core = require("core")
+
+-- VARIABLES
+
+-- TRIGGERS
+function OnMapStart()
+    core.HideDefaultUi()
+end
+
+-- INITIALIZE
+DCEI.TriggerAddTimerEventElapsed(OnMapStart, 0)

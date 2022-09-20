@@ -1,0 +1,11 @@
+{
+    "projectInfo": {
+        "type": 1,
+        "version": "0.0.1",
+        "projectName": "Custom Settings Menu",
+        "entryMap": "Maps/EntryMap"
+    },
+    "display": {
+        "orientation": 1
+    }
+}

@@ -1,0 +1,67 @@
+<UI>
+    <Frame name="UI/PauseMenu">
+        <!-- mask -->
+        <include name="UI/PauseMenu/Mask" />
+        <Frame id="Container">
+            <Frame id="BackgroundBorder" backgroundImage="frame_thick_dark_grey" padding="20" paddingTop="0">
+                <Frame id="Background" paddingTop="80" backgroundImage="frame_light_grey" paddingLeft="16" paddingRight="16" width="504">
+                    <Frame id="Banner" backgroundImage="banner02_blue" topAlignmentInParent="true" verticalOffsetInParent="80" height="68" width="580">
+                        <Text id="Title" translationKey="ui/general/settings" fontSizeMin="14" fontSizeMax="32" verticalOffsetInParent="4" />
+                    </Frame>
+                    <VStack id="ContentStack" spacing="28" paddingBottom="30">
+                        <Frame id="PlayerTagContainer" height="14">
+                            <Text id="PlayerTag" translationKey="ui/profilepage/tag" outline="false" shadow="false" fontSizeMin="18" fontSizeMax="24" color="r: 0.318, g: 0.294, b: 0.671, a: 1" verticalOffsetInParent="-4" />
+                        </Frame>
+                        <Frame id="InnerBackground" backgroundImage="frame_inner_light_grey_stroke" padding="20" paddingTop="20" paddingBottom="30">
+                            <HStack spacing="48">
+                                <VStack spacing="25">
+                                    <include id="ToggleSound" name="UI/PauseMenu/SimpleButton">
+                                        <Text id="Label" translationKey="ui/settings/sound" />
+                                    </include>
+                                    <include id="ConnectFacebook" name="UI/PauseMenu/SimpleButton">
+                                        <Text id="Label" text="Facebook" />
+                                    </include>
+                                    <include id="SaveProgress" name="UI/PauseMenu/SimpleButton">
+                                        <Text id="Label" translationKey="ui/settings/save_progress" />
+                                    </include>
+                                    <include id="SetLanguage" name="UI/PauseMenu/SimpleButton">
+                                        <Text id="Label" translationKey="ui/language" />
+                                    </include>
+                                </VStack>
+                                <VStack spacing="25">
+                                    <include id="ToggleMusic" name="UI/PauseMenu/SimpleButton">
+                                        <Text id="Label" translationKey="ui/settings/music" />
+                                    </include>
+                                    <include id="ConnectOsPlatform" name="UI/PauseMenu/SimpleButton">
+                                        <Text id="Label" text="Google" />
+                                    </include>
+                                    <include id="LoadProgress" name="UI/PauseMenu/SimpleButton">
+                                        <Text id="Label" translationKey="ui/settings/load_progress" />
+                                    </include>
+                                    <include id="GraphicSettings" name="UI/PauseMenu/SimpleButton">
+                                        <Text id="Label" translationKey="ui/settings/graphics" />
+                                    </include>
+                                </VStack>
+                            </HStack>
+                        </Frame>
+                        <HStack spacing="48">
+                            <include id="Support" name="UI/PauseMenu/SimpleButtonSmall">
+                                <Text id="Label" translationKey="ui/profilepage/support" />
+                            </include>
+                            <include id="PrivacyPolicy" name="UI/PauseMenu/SimpleButtonSmall">
+                                <Text id="Label" translationKey="ui/privacy_policy" />
+                            </include>
+                        </HStack>
+                    </VStack>
+                </Frame>
+            </Frame>
+        </Frame>
+    </Frame>
+    <Frame matchParentHeight="true" matchParentWidth="true" backgroundImageColor="r: 0, g: 0, b: 0, a: 0.23" name="UI/PauseMenu/Mask" />
+    <Button backgroundImage="btn_blue" height="65" width="192" name="UI/PauseMenu/SimpleButton">
+        <Text id="Label" text="Save Progress" fontSizeMin="18" fontSizeMax="24" />
+    </Button>
+    <Button backgroundImage="btn_blue" height="65" width="180" name="UI/PauseMenu/SimpleButtonSmall">
+        <Text id="Label" text="Save Progress" fontSizeMin="14" fontSizeMax="20" />
+    </Button>
+</UI>
